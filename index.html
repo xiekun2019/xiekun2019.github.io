@@ -1,13 +1,873 @@
-<!DOCTYPE html><html lang="en"><head><meta http-equiv="content-type" content="text/html; charset=utf-8"><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport"><meta content="yes" name="apple-mobile-web-app-capable"><meta content="black-translucent" name="apple-mobile-web-app-status-bar-style"><meta content="telephone=no" name="format-detection"><meta name="description" content=""><title>Hexo</title><link rel="stylesheet" type="text/css" href="/css/style.css?v=1.0.0"><link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/normalize.css/normalize.min.css"><link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/purecss/build/pure-min.min.css"><link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/purecss/build/grids-responsive-min.css"><link rel="stylesheet" href="//cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css"><script type="text/javascript" src="//cdn.jsdelivr.net/npm/jquery/dist/jquery.min.js"></script><link rel="icon" mask="" sizes="any" href="/favicon.ico"><link rel="Shortcut Icon" type="image/x-icon" href="/favicon.ico"><link rel="apple-touch-icon" href="/apple-touch-icon.png"><link rel="apple-touch-icon-precomposed" href="/apple-touch-icon.png"><script type="text/javascript" src="//cdn.jsdelivr.net/npm/clipboard/dist/clipboard.min.js"></script><script type="text/javascript" src="//cdn.jsdelivr.net/gh/codeseven/toastr/build/toastr.min.js"></script><link rel="stylesheet" href="//cdn.jsdelivr.net/gh/codeseven/toastr/build/toastr.min.css"><!-- hexo injector head_end start -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 5.4.0">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.1.1/animate.min.css">
+
+<meta name="hexo-config" content="{&quot;hostname&quot;:&quot;example.com&quot;,&quot;root&quot;:&quot;/&quot;,&quot;images&quot;:&quot;/images&quot;,&quot;scheme&quot;:&quot;Muse&quot;,&quot;version&quot;:&quot;8.3.0&quot;,&quot;exturl&quot;:false,&quot;sidebar&quot;:{&quot;position&quot;:&quot;left&quot;,&quot;display&quot;:&quot;post&quot;,&quot;padding&quot;:18,&quot;offset&quot;:12},&quot;copycode&quot;:false,&quot;bookmark&quot;:{&quot;enable&quot;:false,&quot;color&quot;:&quot;#222&quot;,&quot;save&quot;:&quot;auto&quot;},&quot;fancybox&quot;:false,&quot;mediumzoom&quot;:false,&quot;lazyload&quot;:false,&quot;pangu&quot;:false,&quot;comments&quot;:{&quot;style&quot;:&quot;tabs&quot;,&quot;active&quot;:null,&quot;storage&quot;:true,&quot;lazyload&quot;:false,&quot;nav&quot;:null},&quot;motion&quot;:{&quot;enable&quot;:true,&quot;async&quot;:false,&quot;transition&quot;:{&quot;post_block&quot;:&quot;fadeIn&quot;,&quot;post_header&quot;:&quot;fadeInDown&quot;,&quot;post_body&quot;:&quot;fadeInDown&quot;,&quot;coll_header&quot;:&quot;fadeInLeft&quot;,&quot;sidebar&quot;:&quot;fadeInUp&quot;}},&quot;prism&quot;:false,&quot;i18n&quot;:{&quot;placeholder&quot;:&quot;Searching...&quot;,&quot;empty&quot;:&quot;We didn&#39;t find any results for the search: ${query}&quot;,&quot;hits_time&quot;:&quot;${hits} results found in ${time} ms&quot;,&quot;hits&quot;:&quot;${hits} results found&quot;}}">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Hexo">
+<meta property="og:url" content="http://example.com/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:locale" content="en_US">
+<meta property="article:author" content="John Doe">
+<meta name="twitter:card" content="summary">
+
+
+<link rel="canonical" href="http://example.com/">
+
+
+
+<meta name="hexo-config-page" content="{&quot;sidebar&quot;:&quot;&quot;,&quot;isHome&quot;:true,&quot;isPost&quot;:false,&quot;lang&quot;:&quot;en&quot;}">
+<meta name="hexo-config-calendar" content="">
+<script data-pjax src="/js/load-config.js"></script>
+  <title>Hexo</title>
+  
+
+
+
+
+  <noscript>
+    <link rel="stylesheet" href="/css/noscript.css">
+  </noscript>
+<!-- hexo injector head_end start -->
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css">
 
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/hexo-math@4.0.0/dist/style.css">
-<!-- hexo injector head_end end --><meta name="generator" content="Hexo 5.4.0"></head><body><div class="body_container"><div id="header"><div class="site-name"><h1 class="hidden">Hexo</h1><a id="logo" href="/.">Hexo</a><p class="description"></p></div><div id="nav-menu"><a class="current" href="/."><i class="fa fa-home"> Home</i></a><a href="/archives/"><i class="fa fa-archive"> Archive</i></a><a href="/about/"><i class="fa fa-user"> About</i></a></div></div><div class="pure-g" id="layout"><div class="pure-u-1 pure-u-md-3-4"><div class="content_container"><div class="post"><h1 class="post-title"><a href="/2021/04/01/%E8%B4%9D%E5%8F%B6%E6%96%AF%E5%85%AC%E5%BC%8F-%E8%B5%8C%E5%9C%BA%E9%97%AE%E9%A2%98/">贝叶斯公式---赌场问题</a></h1><div class="post-meta">2021-04-01</div><div class="post-content"><h2 id="一、问题描述"><a href="#一、问题描述" class="headerlink" title="一、问题描述"></a>一、问题描述</h2><p>Suppose you are in a casino, and you hear a dealer shout “11!” You happen to know that the only two games played at the casino that would occasion that event are craps and roulette and that there are exactly as many craps games as roulette games going on at any moment. What is the probability that the dealer is working at a game of craps, given that he shouted “11?”</p></div><p class="readmore"><a href="/2021/04/01/%E8%B4%9D%E5%8F%B6%E6%96%AF%E5%85%AC%E5%BC%8F-%E8%B5%8C%E5%9C%BA%E9%97%AE%E9%A2%98/">Read More</a></p></div><div class="post"><h1 class="post-title"><a href="/2021/04/01/BlockingQueue%E7%9A%84%E5%9B%9B%E7%BB%84API/">BlockingQueue的四组API</a></h1><div class="post-meta">2021-04-01</div><div class="post-content"><h1 id="BlockingQueue-的四组API"><a href="#BlockingQueue-的四组API" class="headerlink" title="BlockingQueue 的四组API"></a>BlockingQueue 的四组API</h1><table>
-<thead></div><p class="readmore"><a href="/2021/04/01/BlockingQueue%E7%9A%84%E5%9B%9B%E7%BB%84API/">Read More</a></p></div><div class="post"><h1 class="post-title"><a href="/2021/04/01/%E7%BA%BF%E7%A8%8B%E6%B1%A0%E7%9A%843%E4%B8%AA%E6%96%B9%E6%B3%95%EF%BC%8C7%E5%A4%A7%E5%8F%82%E6%95%B0%EF%BC%8C4%E7%A7%8D%E6%8B%92%E7%BB%9D%E7%AD%96%E7%95%A5/">线程池的3个方法，7大参数，4种拒绝策略</a></h1><div class="post-meta">2021-04-01</div><div class="post-content"><h2 id="线程池的3个方法，7大参数，4种拒绝策略"><a href="#线程池的3个方法，7大参数，4种拒绝策略" class="headerlink" title="线程池的3个方法，7大参数，4种拒绝策略"></a>线程池的3个方法，7大参数，4种拒绝策略</h2><h3 id="一、3个创建线程池的方法"><a href="#一、3个创建线程池的方法" class="headerlink" title="一、3个创建线程池的方法"></a>一、3个创建线程池的方法</h3><pre><code> 1. Executors.newSingleThreadExecutor(); // 单个线程的线程池</div><p class="readmore"><a href="/2021/04/01/%E7%BA%BF%E7%A8%8B%E6%B1%A0%E7%9A%843%E4%B8%AA%E6%96%B9%E6%B3%95%EF%BC%8C7%E5%A4%A7%E5%8F%82%E6%95%B0%EF%BC%8C4%E7%A7%8D%E6%8B%92%E7%BB%9D%E7%AD%96%E7%95%A5/">Read More</a></p></div><div class="post"><h1 class="post-title"><a href="/2021/04/01/%E5%9B%9B%E5%A4%A7%E5%87%BD%E6%95%B0%E5%BC%8F%E6%8E%A5%E5%8F%A3/">四大函数式接口</a></h1><div class="post-meta">2021-04-01</div><div class="post-content"><h1 id="四大函数式接口（重点，必须掌握）"><a href="#四大函数式接口（重点，必须掌握）" class="headerlink" title="四大函数式接口（重点，必须掌握）"></a>四大函数式接口（重点，必须掌握）</h1><p>新时代程序员必须掌握的技能：lambda表达式、链式编程、函数式接口、Stream流式计算</p></div><p class="readmore"><a href="/2021/04/01/%E5%9B%9B%E5%A4%A7%E5%87%BD%E6%95%B0%E5%BC%8F%E6%8E%A5%E5%8F%A3/">Read More</a></p></div><div class="post"><h1 class="post-title"><a href="/2021/04/01/Stream%E6%B5%81%E5%BC%8F%E8%AE%A1%E7%AE%97/">Stream流式计算</a></h1><div class="post-meta">2021-04-01</div><div class="post-content"><h1 id="Stream流式计算"><a href="#Stream流式计算" class="headerlink" title="Stream流式计算"></a>Stream流式计算</h1><blockquote>
+<!-- hexo injector head_end end --></head>
+
+<body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
+  <div class="headband"></div>
+
+  <main class="main">
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="Toggle navigation bar" role="button">
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <h1 class="site-title">Hexo</h1>
+      <i class="logo-line"></i>
+    </a>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+</div>
+        
+  
+  <div class="toggle sidebar-toggle" role="button">
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+  </div>
+
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-overview-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          Table of Contents
+        </li>
+        <li class="sidebar-nav-overview">
+          Overview
+        </li>
+      </ul>
+
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <div class="post-toc-wrap sidebar-panel">
+        </div>
+        <!--/noindex-->
+
+        <div class="site-overview-wrap sidebar-panel">
+          <div class="site-author site-overview-item animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">John Doe</p>
+  <div class="site-description" itemprop="description"></div>
+</div>
+<div class="site-state-wrap site-overview-item animated">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives">
+          <span class="site-state-item-count">8</span>
+          <span class="site-state-item-name">posts</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-tags">
+        <span class="site-state-item-count">4</span>
+        <span class="site-state-item-name">tags</span>
+      </div>
+  </nav>
+</div>
+
+
+
+        </div>
+      </div>
+    </div>
+  </aside>
+  <div class="sidebar-dimmer"></div>
+
+
+    </header>
+
+    
+  <div class="back-to-top" role="button" aria-label="Back to top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+
+
+    <div class="main-inner index posts-expand">
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2021/04/01/%E8%B4%9D%E5%8F%B6%E6%96%AF%E5%85%AC%E5%BC%8F-%E8%B5%8C%E5%9C%BA%E9%97%AE%E9%A2%98/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="John Doe">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Hexo">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2021/04/01/%E8%B4%9D%E5%8F%B6%E6%96%AF%E5%85%AC%E5%BC%8F-%E8%B5%8C%E5%9C%BA%E9%97%AE%E9%A2%98/" class="post-title-link" itemprop="url">贝叶斯公式---赌场问题</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">Posted on</span>
+      
+
+      <time title="Created: 2021-04-01 21:33:19 / Modified: 21:53:18" itemprop="dateCreated datePublished" datetime="2021-04-01T21:33:19+08:00">2021-04-01</time>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <h2 id="一、问题描述"><a href="#一、问题描述" class="headerlink" title="一、问题描述"></a>一、问题描述</h2><p>Suppose you are in a casino, and you hear a dealer shout “11!” You happen to know that the only two games played at the casino that would occasion that event are craps and roulette and that there are exactly as many craps games as roulette games going on at any moment. What is the probability that the dealer is working at a game of craps, given that he shouted “11?”</p>
+<hr>
+<p>假设你在一个赌场，并且你听到一个发牌员大喊：“十一！” 你碰巧知道，在这个赌场中只有摇色子和转轮盘两个游戏才会出现这个情况，并且在任何时候摇色子和转轮盘两个游戏的数量都是相同的。<br>假设发牌员喊了“十一”，你能求出他在摇色子的概率吗？</p>
+<blockquote>
+<p>注：摇色子是一种赌博者赌两个骰子的总和的游戏。在美式转轮盘游戏的转盘上内一共有38个不同的小方格，小球出现在每一个方格的概率相同。</p>
+</blockquote>
+<h2 id="二、问题解答"><a href="#二、问题解答" class="headerlink" title="二、问题解答"></a>二、问题解答</h2><p>这是一个明显的已知结果，求原因的概率问题。需要求的概率是：$P(“craps”|“11”)$ ，即已知发牌员喊了“十一”的条件下，他在摇色子的概率。</p>
+<p>运用贝叶斯公式：<br>$$<br>P(“craps”|“11”) = \frac{P(“11”|“craps”)*P(“craps”)}{P(“11”)}<br>$$<br>在摇色子的游戏中，两个骰子的总和为11的概率为：<br>$$<br>P(“11”|“craps”) = \frac{2}{36} = \frac{1}{18}<br>$$<br>在转轮盘的游戏中，出现11的概率为：<br>$$<br>P(“11”|“roulette”)=\frac{1}{38}<br>$$</p>
+<p>由于在任何时候摇色子和转轮盘两个游戏的数量都是相同的，所以二者出现的概率相同，有：<br>$$<br>P(“craps”)=P(“roulette”)=\frac{1}{2}<br>$$<br>利用全概率公式：<br>$$<br>\begin{align*}P(“11”) &amp;=P(“11”|”craps”)P(“craps”)+P(“11”|”roulette”)P(“roulette”)\&amp;=\frac{1}{2}\times\frac{1}{18}+\frac{1}{2}\times\frac{1}{38}\&amp;=\frac{7}{171}\end{align*}<br>$$<br>所以，我们可以得到最终解：<br>$$<br>P(“craps”|“11”) = \frac{P(“11”|“craps”)*P(“craps”)}{P(“11”)}=\frac{1/18\times1/2}{7/171}=0.679<br>$$</p>
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2021/04/01/BlockingQueue%E7%9A%84%E5%9B%9B%E7%BB%84API/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="John Doe">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Hexo">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2021/04/01/BlockingQueue%E7%9A%84%E5%9B%9B%E7%BB%84API/" class="post-title-link" itemprop="url">BlockingQueue的四组API</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">Posted on</span>
+      
+
+      <time title="Created: 2021-04-01 21:32:47 / Modified: 21:32:57" itemprop="dateCreated datePublished" datetime="2021-04-01T21:32:47+08:00">2021-04-01</time>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <h1 id="BlockingQueue-的四组API"><a href="#BlockingQueue-的四组API" class="headerlink" title="BlockingQueue 的四组API"></a>BlockingQueue 的四组API</h1><table>
+<thead>
+<tr>
+<th align="left">方式</th>
+<th align="center">抛出异常</th>
+<th align="center">返回值</th>
+<th align="center">阻塞等待</th>
+<th align="center">超时等待</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">插入元素</td>
+<td align="center">add(e)</td>
+<td align="center">offer(e)</td>
+<td align="center">put(e)</td>
+<td align="center">offer(e, time, unit)</td>
+</tr>
+<tr>
+<td align="left">删除元素</td>
+<td align="center">remove()</td>
+<td align="center">pool()</td>
+<td align="center">take()</td>
+<td align="center">poll(time, unit)</td>
+</tr>
+<tr>
+<td align="left">检查队首元素</td>
+<td align="center">element()</td>
+<td align="center">peek()</td>
+<td align="center">-</td>
+<td align="center">-</td>
+</tr>
+</tbody></table>
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2021/04/01/%E7%BA%BF%E7%A8%8B%E6%B1%A0%E7%9A%843%E4%B8%AA%E6%96%B9%E6%B3%95%EF%BC%8C7%E5%A4%A7%E5%8F%82%E6%95%B0%EF%BC%8C4%E7%A7%8D%E6%8B%92%E7%BB%9D%E7%AD%96%E7%95%A5/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="John Doe">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Hexo">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2021/04/01/%E7%BA%BF%E7%A8%8B%E6%B1%A0%E7%9A%843%E4%B8%AA%E6%96%B9%E6%B3%95%EF%BC%8C7%E5%A4%A7%E5%8F%82%E6%95%B0%EF%BC%8C4%E7%A7%8D%E6%8B%92%E7%BB%9D%E7%AD%96%E7%95%A5/" class="post-title-link" itemprop="url">线程池的3个方法，7大参数，4种拒绝策略</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">Posted on</span>
+      
+
+      <time title="Created: 2021-04-01 21:31:28 / Modified: 21:32:20" itemprop="dateCreated datePublished" datetime="2021-04-01T21:31:28+08:00">2021-04-01</time>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <h2 id="线程池的3个方法，7大参数，4种拒绝策略"><a href="#线程池的3个方法，7大参数，4种拒绝策略" class="headerlink" title="线程池的3个方法，7大参数，4种拒绝策略"></a>线程池的3个方法，7大参数，4种拒绝策略</h2><h3 id="一、3个创建线程池的方法"><a href="#一、3个创建线程池的方法" class="headerlink" title="一、3个创建线程池的方法"></a>一、3个创建线程池的方法</h3><pre><code> 1. Executors.newSingleThreadExecutor(); // 单个线程的线程池
+ 2. Executors.newFixedThreadPool(5); // 固定大小的线程池
+ 3. Executors.newCachedThreadPool(); // 可伸缩的线程池，遇强则强，遇弱则弱
+</code></pre>
+<p>在<strong>阿里开发手册</strong>中：</p>
+<p>线程池不允许使用 Executors 去创建，而是通过 ThreadPoolExecutor 的方式，这样的处理方式让写的同学更加明确线程池的运行规则，规避资源耗尽的风险。 说明：Executors 返回的线程池对象的弊端如下： </p>
+<p>1） FixedThreadPool 和 SingleThreadPool： 允许的请求队列长度为 Integer.MAX_VALUE，可能会堆积大量的请求，从而导致 OOM。 </p>
+<p>2） CachedThreadPool： 允许的创建线程数量为 Integer.MAX_VALUE，可能会创建大量的线程，从而导致OOM。</p>
+<p>以下为三种创建方法的函数的源码：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> ExecutorService <span class="title">newSingleThreadExecutor</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    <span class="keyword">return</span> <span class="keyword">new</span> FinalizableDelegatedExecutorService</span><br><span class="line">        (<span class="keyword">new</span> ThreadPoolExecutor(<span class="number">1</span>, <span class="number">1</span>,</span><br><span class="line">                                <span class="number">0L</span>, TimeUnit.MILLISECONDS,</span><br><span class="line">                                <span class="keyword">new</span> LinkedBlockingQueue&lt;Runnable&gt;()));</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> ExecutorService <span class="title">newFixedThreadPool</span><span class="params">(<span class="keyword">int</span> nThreads)</span> </span>&#123;</span><br><span class="line">    <span class="keyword">return</span> <span class="keyword">new</span> ThreadPoolExecutor(nThreads, nThreads,</span><br><span class="line">                                  <span class="number">0L</span>, TimeUnit.MILLISECONDS,</span><br><span class="line">                                  <span class="keyword">new</span> LinkedBlockingQueue&lt;Runnable&gt;());</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> ExecutorService <span class="title">newCachedThreadPool</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    <span class="keyword">return</span> <span class="keyword">new</span> ThreadPoolExecutor(<span class="number">0</span>, Integer.MAX_VALUE,</span><br><span class="line">                                  <span class="number">60L</span>, TimeUnit.SECONDS,</span><br><span class="line">                                  <span class="keyword">new</span> SynchronousQueue&lt;Runnable&gt;());</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>以下就是 ThreadPoolExecutor 函数，有7大参数，下节详细阐述。</p>
+<p><img src="https://img2020.cnblogs.com/blog/1814487/202101/1814487-20210117210359495-750752338.png"></p>
+<h3 id="二、线程池的7大参数"><a href="#二、线程池的7大参数" class="headerlink" title="二、线程池的7大参数"></a>二、线程池的7大参数</h3><p> <strong>(1) corePoolSize：核心线程数（当等待队列不满的时候，只会调用核心线程）</strong></p>
+<p> <strong>(2) maximumPoolSize：最大线程数（当等待队列满了的时候，会激活更多的线程）</strong></p>
+<p> <strong>(3) keepAliveTime：新激活的线程在没有任务的情况下的存活时间</strong></p>
+<p> <strong>(4) TimeUnit：keepAliveTime 的单位</strong></p>
+<p> <strong>(5) BlockingQueue：阻塞队列，当核心线程满了，新的请求会在队列中等待</strong></p>
+<p> <strong>(6) ThreadFactory：创建线程的工厂，使用默认的 Executors.defaultThreadFactory() 即可</strong></p>
+<p> <strong>(7) RejectedExecutionHandler：拒绝策略，当超出线程池的最大承载时的拒绝策略（有4种拒绝策略）</strong></p>
+<p>现在我们再来看看阿里开发手册中的两句话：</p>
+<p>1） FixedThreadPool 和 SingleThreadPool： 允许的请求队列长度为 Integer.MAX_VALUE，可能会堆积大量的请求，从而导致 OOM。 </p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> ExecutorService <span class="title">newSingleThreadExecutor</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    <span class="keyword">return</span> <span class="keyword">new</span> FinalizableDelegatedExecutorService</span><br><span class="line">        (<span class="keyword">new</span> ThreadPoolExecutor(<span class="number">1</span>, <span class="number">1</span>,</span><br><span class="line">                                <span class="number">0L</span>, TimeUnit.MILLISECONDS,</span><br><span class="line">                                <span class="keyword">new</span> LinkedBlockingQueue&lt;Runnable&gt;()));</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plain"><figcaption><span>中的传入的阻塞队列参数为 ```new LinkedBlockingQueue<Runnable>()``` ，而 ```LinkedBlockingQueue``` 的默认构造函数的队列长度为 Integer.MAX_VALUE 约等于21亿，所以可能会堆积大量的请求，从而导致 OOM。``` FixedThreadPool ```同理。</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">![](https:&#x2F;&#x2F;img2020.cnblogs.com&#x2F;blog&#x2F;1814487&#x2F;202101&#x2F;1814487-20210117210410855-1233909230.png)</span><br><span class="line"></span><br><span class="line">2） CachedThreadPool： 允许的创建线程数量为 Integer.MAX_VALUE，可能会创建大量的线程，从而导致OOM。</span><br><span class="line"></span><br><span class="line">&#96;&#96;&#96;java</span><br><span class="line">public static ExecutorService newCachedThreadPool() &#123;</span><br><span class="line">    return new ThreadPoolExecutor(0, Integer.MAX_VALUE,</span><br><span class="line">                                  60L, TimeUnit.SECONDS,</span><br><span class="line">                                  new SynchronousQueue&lt;Runnable&gt;());</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p><code>newCachedThreadPool</code> 中的传入的最大线程数参数为 Integer.MAX_VALUE，可能会创建大量的线程，从而导致OOM。</p>
+<p><strong>那么最大线程数应该如何定义呢？</strong>分以下两种情况：</p>
+<ol>
+<li><strong>CPU 密集型</strong>：几个核心就定义为几，可以保证 CPU 的效率最高，例如一个4核的 CPU，则可以令 <code>maximumPoolSize = 4</code>，其中可以使用 <code>Runtime.getRuntime().availableProcessors() </code> 获取 CPU 的核数。</li>
+<li><strong>IO 密集型</strong>：程序中有很多大型任务，IO 十分占用资源！此时要判断程序中十分消耗 IO 的线程数，只要大于该数即可，一般可以设置为两倍。</li>
+</ol>
+<h3 id="三、4种拒绝策略"><a href="#三、4种拒绝策略" class="headerlink" title="三、4种拒绝策略"></a>三、4种拒绝策略</h3><p><img src="https://img2020.cnblogs.com/blog/1814487/202101/1814487-20210117210420518-297893851.png"></p>
+<p><strong>(1) ThreadPoolExecutor.AbortPolicy()：当达到线程池的最大承载时，还有请求，则不处理，并且抛出异常。</strong></p>
+<p><strong>(2) ThreadPoolExecutor.CallerRunsPolicy(): 当达到线程池的最大承载时，还有请求，那条线程请求那条线程去处理，一般为 main 线程。</strong></p>
+<p><strong>(3) ThreadPoolExecutor.DiscardPolicy(): 当达到线程池的最大承载时，还有请求，则丢掉任务，并且不抛出异常。</strong></p>
+<p> <strong>(4) ThreadPoolExecutor.DiscardOldestPolicy(): 当达到线程池的最大承载时，还有请求，则尝试去和最老的线程竞争, 并且不抛出异常。</strong></p>
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2021/04/01/%E5%9B%9B%E5%A4%A7%E5%87%BD%E6%95%B0%E5%BC%8F%E6%8E%A5%E5%8F%A3/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="John Doe">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Hexo">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2021/04/01/%E5%9B%9B%E5%A4%A7%E5%87%BD%E6%95%B0%E5%BC%8F%E6%8E%A5%E5%8F%A3/" class="post-title-link" itemprop="url">四大函数式接口</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">Posted on</span>
+      
+
+      <time title="Created: 2021-04-01 21:29:46 / Modified: 21:31:06" itemprop="dateCreated datePublished" datetime="2021-04-01T21:29:46+08:00">2021-04-01</time>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <h1 id="四大函数式接口（重点，必须掌握）"><a href="#四大函数式接口（重点，必须掌握）" class="headerlink" title="四大函数式接口（重点，必须掌握）"></a>四大函数式接口（重点，必须掌握）</h1><p>新时代程序员必须掌握的技能：lambda表达式、链式编程、函数式接口、Stream流式计算</p>
+<blockquote>
+<p>函数式接口：只有一个方法的接口。例如Runnable，在Java中非常多，它可以简化编程模型，在新版本中的框架底层大量应用。foreach(消费者类的函数式接口)</p>
+</blockquote>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@FunctionalInterface</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">interface</span> <span class="title">Runnable</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">abstract</span> <span class="keyword">void</span> <span class="title">run</span><span class="params">()</span></span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="一、Function函数型接口"><a href="#一、Function函数型接口" class="headerlink" title="一、Function函数型接口"></a>一、Function函数型接口</h2><p>Function函数式接口有一个输入参数，有一个输出参数。</p>
+<p><img src="https://img2020.cnblogs.com/blog/1814487/202101/1814487-20210119110418969-997269498.png"></p>
+<p>使用方法：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">package</span> com.kuang.function;</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> java.util.function.Function;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Demo01</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">        Function&lt;String, String&gt; function = <span class="keyword">new</span> Function&lt;String, String&gt;() &#123;</span><br><span class="line">            <span class="meta">@Override</span></span><br><span class="line">            <span class="function"><span class="keyword">public</span> String <span class="title">apply</span><span class="params">(String s)</span> </span>&#123;</span><br><span class="line">                <span class="keyword">return</span> s;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;;</span><br><span class="line"></span><br><span class="line">        System.out.println(function.apply(<span class="string">&quot;test&quot;</span>));</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>输出：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">test</span><br></pre></td></tr></table></figure>
+
+<p>只要是函数式接口就可以用lambda表达式简化。如下所示：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">package</span> com.kuang.function;</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> java.util.function.Function;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Demo01</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line"><span class="comment">//        Function&lt;String, String&gt; function = new Function&lt;String, String&gt;() &#123;</span></span><br><span class="line"><span class="comment">//            @Override</span></span><br><span class="line"><span class="comment">//            public String apply(String s) &#123;</span></span><br><span class="line"><span class="comment">//                return s;</span></span><br><span class="line"><span class="comment">//            &#125;</span></span><br><span class="line"><span class="comment">//        &#125;;</span></span><br><span class="line">        <span class="comment">// 简化</span></span><br><span class="line">        Function&lt;String, String&gt; function = (str) -&gt; &#123;<span class="keyword">return</span> str;&#125;;</span><br><span class="line">        System.out.println(function.apply(<span class="string">&quot;test&quot;</span>));</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="二、Predicate断定型接口"><a href="#二、Predicate断定型接口" class="headerlink" title="二、Predicate断定型接口"></a>二、Predicate断定型接口</h2><p>Predicate函数式接口只有一个输入参数，输出参数是一个布尔类型。断定形接口。</p>
+<p><img src="https://img2020.cnblogs.com/blog/1814487/202101/1814487-20210119110430274-1530743765.png"></p>
+<p>使用方法：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">package</span> com.kuang.function;</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> java.util.function.Predicate;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Demo02</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">        <span class="comment">// 判断字符串是否为空</span></span><br><span class="line">        Predicate&lt;String&gt; predicate = <span class="keyword">new</span> Predicate&lt;String&gt;() &#123;</span><br><span class="line">            <span class="meta">@Override</span></span><br><span class="line">            <span class="function"><span class="keyword">public</span> <span class="keyword">boolean</span> <span class="title">test</span><span class="params">(String s)</span> </span>&#123;</span><br><span class="line">                <span class="keyword">return</span> s.isEmpty();</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;;</span><br><span class="line"></span><br><span class="line">        System.out.println(predicate.test(<span class="string">&quot;test&quot;</span>));</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>输出：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">false</span><br></pre></td></tr></table></figure>
+
+<p>简化：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">package</span> com.kuang.function;</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> java.util.function.Predicate;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Demo02</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">        <span class="comment">// 判断字符串是否为空</span></span><br><span class="line"><span class="comment">//        Predicate&lt;String&gt; predicate = new Predicate&lt;String&gt;() &#123;</span></span><br><span class="line"><span class="comment">//            @Override</span></span><br><span class="line"><span class="comment">//            public boolean test(String s) &#123;</span></span><br><span class="line"><span class="comment">//                return s.isEmpty();</span></span><br><span class="line"><span class="comment">//            &#125;</span></span><br><span class="line"><span class="comment">//        &#125;;</span></span><br><span class="line">        <span class="comment">// 简化</span></span><br><span class="line">        Predicate&lt;String&gt; predicate = (s) -&gt; &#123;<span class="keyword">return</span> s.isEmpty();&#125;;</span><br><span class="line">        System.out.println(predicate.test(<span class="string">&quot;test&quot;</span>));</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="三、Consumer消费型接口"><a href="#三、Consumer消费型接口" class="headerlink" title="三、Consumer消费型接口"></a>三、Consumer消费型接口</h2><p>Consumer消费型接口只有输入，没有返回值</p>
+<p><img src="https://img2020.cnblogs.com/blog/1814487/202101/1814487-20210119110443976-148763968.png"></p>
+<p>用法：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">package</span> com.kuang.function;</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> java.util.function.Consumer;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Demo03</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line"><span class="comment">//        Consumer&lt;String&gt; consumer = new Consumer&lt;String&gt;() &#123;</span></span><br><span class="line"><span class="comment">//            @Override</span></span><br><span class="line"><span class="comment">//            public void accept(String s) &#123;</span></span><br><span class="line"><span class="comment">//                System.out.println(s);</span></span><br><span class="line"><span class="comment">//            &#125;</span></span><br><span class="line"><span class="comment">//        &#125;;</span></span><br><span class="line">        <span class="comment">// 简化</span></span><br><span class="line">        Consumer&lt;String&gt; consumer = (s) -&gt; &#123; System.out.println(s); &#125;;</span><br><span class="line">        consumer.accept(<span class="string">&quot;test&quot;</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="四、Supplier供给型接口"><a href="#四、Supplier供给型接口" class="headerlink" title="四、Supplier供给型接口"></a>四、Supplier供给型接口</h2><p>Supplier供给型接口没有参数，只有返回值。</p>
+<p><img src="https://img2020.cnblogs.com/blog/1814487/202101/1814487-20210119110455689-568415561.png"></p>
+<p>用法：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">package</span> com.kuang.function;</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> java.util.function.Supplier;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Demo04</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line"><span class="comment">//        Supplier&lt;Integer&gt; supplier = new Supplier&lt;Integer&gt;() &#123;</span></span><br><span class="line"><span class="comment">//            @Override</span></span><br><span class="line"><span class="comment">//            public Integer get() &#123;</span></span><br><span class="line"><span class="comment">//                return 1024;</span></span><br><span class="line"><span class="comment">//            &#125;</span></span><br><span class="line"><span class="comment">//        &#125;;</span></span><br><span class="line">        <span class="comment">// 简化</span></span><br><span class="line">        Supplier&lt;Integer&gt; supplier = () -&gt; &#123;<span class="keyword">return</span> <span class="number">1024</span>;&#125;;</span><br><span class="line">        System.out.println(supplier.get());</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2021/04/01/Stream%E6%B5%81%E5%BC%8F%E8%AE%A1%E7%AE%97/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="John Doe">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Hexo">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2021/04/01/Stream%E6%B5%81%E5%BC%8F%E8%AE%A1%E7%AE%97/" class="post-title-link" itemprop="url">Stream流式计算</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">Posted on</span>
+      
+
+      <time title="Created: 2021-04-01 21:28:45 / Modified: 21:29:03" itemprop="dateCreated datePublished" datetime="2021-04-01T21:28:45+08:00">2021-04-01</time>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <h1 id="Stream流式计算"><a href="#Stream流式计算" class="headerlink" title="Stream流式计算"></a>Stream流式计算</h1><blockquote>
 <p>什么是Stream流式计算</p>
 </blockquote>
-<p>数据处理中不可缺少的两部分：存储 + 计算</p></div><p class="readmore"><a href="/2021/04/01/Stream%E6%B5%81%E5%BC%8F%E8%AE%A1%E7%AE%97/">Read More</a></p></div><div class="post"><h1 class="post-title"><a href="/2021/04/01/%E5%85%AC%E5%B9%B3%E9%94%81%E5%92%8C%E9%9D%9E%E5%85%AC%E5%B9%B3%E9%94%81%E7%9A%84%E5%8C%BA%E5%88%AB/">Reentrantlock 公平锁和非公平锁的区别</a></h1><div class="post-meta">2021-04-01</div><div class="post-content"><p>转自：<a target="_blank" rel="noopener" href="https://javadoop.com/post/AbstractQueuedSynchronizer-2">一行一行源码分析清楚 AbstractQueuedSynchronizer (二)</a></p>
-<p>ReentrantLock 默认采用非公平锁，如果你在构造函数中传入参数 true 则变成非公平锁</p></div><p class="readmore"><a href="/2021/04/01/%E5%85%AC%E5%B9%B3%E9%94%81%E5%92%8C%E9%9D%9E%E5%85%AC%E5%B9%B3%E9%94%81%E7%9A%84%E5%8C%BA%E5%88%AB/">Read More</a></p></div><div class="post"><h1 class="post-title"><a href="/2021/04/01/%E5%8F%AF%E9%81%93%E4%BA%91%E7%9B%98%E6%90%AD%E5%BB%BA/">可道云盘搭建</a></h1><div class="post-meta">2021-04-01</div><div class="post-content"><h2 id="1-申请-ssl-证书"><a href="#1-申请-ssl-证书" class="headerlink" title="1. 申请 ssl 证书"></a>1. 申请 ssl 证书</h2><p>我是在华为云上申请的免费证书，步骤教学官网很详细：<a target="_blank" rel="noopener" href="https://support.huaweicloud.com/qs-ccm/ccm_07_0012.html">https://support.huaweicloud.com/qs-ccm/ccm_07_0012.html</a></p></div><p class="readmore"><a href="/2021/04/01/%E5%8F%AF%E9%81%93%E4%BA%91%E7%9B%98%E6%90%AD%E5%BB%BA/">Read More</a></p></div><div class="post"><h1 class="post-title"><a href="/2021/04/01/%E5%BC%BA%E3%80%81%E8%BD%AF%E3%80%81%E5%BC%B1%E3%80%81%E8%99%9A%E5%9B%9B%E7%A7%8D%E5%BC%95%E7%94%A8%E7%9A%84%E5%8C%BA%E5%88%AB/">强、软、弱、虚四种引用的区别</a></h1><div class="post-meta">2021-04-01</div><div class="post-content"><h1 id="强、软、弱、虚四种引用的区别"><a href="#强、软、弱、虚四种引用的区别" class="headerlink" title="强、软、弱、虚四种引用的区别"></a>强、软、弱、虚四种引用的区别</h1><p>转自：<a target="_blank" rel="noopener" href="https://blog.csdn.net/junjunba2689/article/details/80601729">https://blog.csdn.net/junjunba2689/article/details/80601729</a></p></div><p class="readmore"><a href="/2021/04/01/%E5%BC%BA%E3%80%81%E8%BD%AF%E3%80%81%E5%BC%B1%E3%80%81%E8%99%9A%E5%9B%9B%E7%A7%8D%E5%BC%95%E7%94%A8%E7%9A%84%E5%8C%BA%E5%88%AB/">Read More</a></p></div><script type="text/x-mathjax-config">MathJax.Hub.Config({
-  tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}
-  });
-</script><script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML" async></script></div></div><div class="pure-u-1-4 hidden_mid_and_down"><div id="sidebar"><div class="widget"><form class="search-form" action="//www.google.com/search" method="get" accept-charset="utf-8" target="_blank"><input type="text" name="q" maxlength="20" placeholder="Search"/><input type="hidden" name="sitesearch" value="http://example.com"/></form></div><div class="widget"><div class="widget-title"><i class="fa fa-folder-o"> Categories</i></div></div><div class="widget"><div class="widget-title"><i class="fa fa-star-o"> Tags</i></div><div class="tagcloud"><a href="/tags/Java/" style="font-size: 15px;">Java</a> <a href="/tags/%E6%9C%8D%E5%8A%A1%E5%99%A8/" style="font-size: 15px;">服务器</a> <a href="/tags/%E6%A6%82%E7%8E%87%E8%AE%BA%E4%B8%8E%E6%95%B0%E7%90%86%E7%BB%9F%E8%AE%A1/" style="font-size: 15px;">概率论与数理统计</a> <a href="/tags/%E6%95%B0%E5%AD%A6/" style="font-size: 15px;">数学</a></div></div><div class="widget"><div class="widget-title"><i class="fa fa-file-o"> Recent</i></div><ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2021/04/01/%E8%B4%9D%E5%8F%B6%E6%96%AF%E5%85%AC%E5%BC%8F-%E8%B5%8C%E5%9C%BA%E9%97%AE%E9%A2%98/">贝叶斯公式---赌场问题</a></li><li class="post-list-item"><a class="post-list-link" href="/2021/04/01/BlockingQueue%E7%9A%84%E5%9B%9B%E7%BB%84API/">BlockingQueue的四组API</a></li><li class="post-list-item"><a class="post-list-link" href="/2021/04/01/%E7%BA%BF%E7%A8%8B%E6%B1%A0%E7%9A%843%E4%B8%AA%E6%96%B9%E6%B3%95%EF%BC%8C7%E5%A4%A7%E5%8F%82%E6%95%B0%EF%BC%8C4%E7%A7%8D%E6%8B%92%E7%BB%9D%E7%AD%96%E7%95%A5/">线程池的3个方法，7大参数，4种拒绝策略</a></li><li class="post-list-item"><a class="post-list-link" href="/2021/04/01/%E5%9B%9B%E5%A4%A7%E5%87%BD%E6%95%B0%E5%BC%8F%E6%8E%A5%E5%8F%A3/">四大函数式接口</a></li><li class="post-list-item"><a class="post-list-link" href="/2021/04/01/Stream%E6%B5%81%E5%BC%8F%E8%AE%A1%E7%AE%97/">Stream流式计算</a></li><li class="post-list-item"><a class="post-list-link" href="/2021/04/01/%E5%85%AC%E5%B9%B3%E9%94%81%E5%92%8C%E9%9D%9E%E5%85%AC%E5%B9%B3%E9%94%81%E7%9A%84%E5%8C%BA%E5%88%AB/">Reentrantlock 公平锁和非公平锁的区别</a></li><li class="post-list-item"><a class="post-list-link" href="/2021/04/01/%E5%8F%AF%E9%81%93%E4%BA%91%E7%9B%98%E6%90%AD%E5%BB%BA/">可道云盘搭建</a></li><li class="post-list-item"><a class="post-list-link" href="/2021/04/01/%E5%BC%BA%E3%80%81%E8%BD%AF%E3%80%81%E5%BC%B1%E3%80%81%E8%99%9A%E5%9B%9B%E7%A7%8D%E5%BC%95%E7%94%A8%E7%9A%84%E5%8C%BA%E5%88%AB/">强、软、弱、虚四种引用的区别</a></li></ul></div><div class="widget"><div class="widget-title"><i class="fa fa-external-link"> Links</i></div><ul></ul><a href="http://www.example1.com/" title="site-name1" target="_blank">site-name1</a><ul></ul><a href="http://www.example2.com/" title="site-name2" target="_blank">site-name2</a><ul></ul><a href="http://www.example3.com/" title="site-name3" target="_blank">site-name3</a></div></div></div><div class="pure-u-1 pure-u-md-3-4"><div id="footer">Copyright © 2021 <a href="/." rel="nofollow">Hexo.</a> Powered by<a rel="nofollow" target="_blank" href="https://hexo.io"> Hexo.</a><a rel="nofollow" target="_blank" href="https://github.com/tufu9441/maupassant-hexo"> Theme</a> by<a rel="nofollow" target="_blank" href="https://github.com/pagecho"> Cho.</a></div></div></div><a class="show" id="rocket" href="#top"></a><script type="text/javascript" src="/js/totop.js?v=1.0.0" async></script><script type="text/javascript" src="//cdn.jsdelivr.net/gh/fancyapps/fancybox/dist/jquery.fancybox.min.js" async></script><script type="text/javascript" src="/js/fancybox.js?v=1.0.0" async></script><link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/fancyapps/fancybox/dist/jquery.fancybox.min.css"><script type="text/javascript" src="/js/copycode.js" successtext="Copy Successed!"></script><link rel="stylesheet" type="text/css" href="/css/copycode.css"><script type="text/javascript" src="/js/codeblock-resizer.js?v=1.0.0"></script><script type="text/javascript" src="/js/smartresize.js?v=1.0.0"></script></div></body></html>
+<p>数据处理中不可缺少的两部分：存储 + 计算</p>
+<p>集合、MySQL本质就是存储数据的，计算都应该交给流来操作！</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">package</span> com.kuang.stream;</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> lombok.AllArgsConstructor;</span><br><span class="line"><span class="keyword">import</span> lombok.Data;</span><br><span class="line"><span class="keyword">import</span> lombok.NoArgsConstructor;</span><br><span class="line"></span><br><span class="line"><span class="meta">@Data</span></span><br><span class="line"><span class="meta">@NoArgsConstructor</span></span><br><span class="line"><span class="meta">@AllArgsConstructor</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">User</span> </span>&#123;</span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">int</span> id;</span><br><span class="line">    <span class="keyword">private</span> String name;</span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">int</span> age;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">package</span> com.kuang.stream;</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> java.util.Arrays;</span><br><span class="line"><span class="keyword">import</span> java.util.List;</span><br><span class="line"></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * 题目要求: 一分钟内完成此题, 只能用一行代码实现</span></span><br><span class="line"><span class="comment"> * 现有5个用户, 进行筛选:</span></span><br><span class="line"><span class="comment"> * 1. ID必须是偶数</span></span><br><span class="line"><span class="comment"> * 2. 年龄必须大于23岁</span></span><br><span class="line"><span class="comment"> * 3. 用户名转为大写字母</span></span><br><span class="line"><span class="comment"> * 4. 用户名字母倒着排序</span></span><br><span class="line"><span class="comment"> * 5. 只输出一个用户</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Test</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">        User u1 = <span class="keyword">new</span> User(<span class="number">1</span>, <span class="string">&quot;a&quot;</span>, <span class="number">21</span>);</span><br><span class="line">        User u2 = <span class="keyword">new</span> User(<span class="number">2</span>, <span class="string">&quot;b&quot;</span>, <span class="number">22</span>);</span><br><span class="line">        User u3 = <span class="keyword">new</span> User(<span class="number">3</span>, <span class="string">&quot;c&quot;</span>, <span class="number">23</span>);</span><br><span class="line">        User u4 = <span class="keyword">new</span> User(<span class="number">4</span>, <span class="string">&quot;d&quot;</span>, <span class="number">24</span>);</span><br><span class="line">        User u5 = <span class="keyword">new</span> User(<span class="number">6</span>, <span class="string">&quot;e&quot;</span>, <span class="number">25</span>);</span><br><span class="line">        <span class="comment">// 集合用来存储数据</span></span><br><span class="line">        List&lt;User&gt; list = Arrays.asList(u1, u2, u3, u4, u5);</span><br><span class="line"></span><br><span class="line">        <span class="comment">// 计算交给stream流</span></span><br><span class="line">        list.stream()</span><br><span class="line">                .filter((u) -&gt; &#123;<span class="keyword">return</span> u.getId()%<span class="number">2</span> == <span class="number">0</span>;&#125;)</span><br><span class="line">                .filter((u) -&gt; &#123;<span class="keyword">return</span> u.getAge()&gt;<span class="number">23</span>;&#125;)</span><br><span class="line">                .map((u) -&gt; &#123;<span class="keyword">return</span> u.getName().toUpperCase();&#125;)</span><br><span class="line">                .sorted((uu1, uu2) -&gt; &#123;<span class="keyword">return</span> uu2.compareTo(uu1);&#125;)</span><br><span class="line">                .limit(<span class="number">1</span>)</span><br><span class="line">                .forEach(System.out::println);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2021/04/01/%E5%85%AC%E5%B9%B3%E9%94%81%E5%92%8C%E9%9D%9E%E5%85%AC%E5%B9%B3%E9%94%81%E7%9A%84%E5%8C%BA%E5%88%AB/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="John Doe">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Hexo">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2021/04/01/%E5%85%AC%E5%B9%B3%E9%94%81%E5%92%8C%E9%9D%9E%E5%85%AC%E5%B9%B3%E9%94%81%E7%9A%84%E5%8C%BA%E5%88%AB/" class="post-title-link" itemprop="url">Reentrantlock 公平锁和非公平锁的区别</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">Posted on</span>
+      
+
+      <time title="Created: 2021-04-01 21:23:15 / Modified: 21:27:24" itemprop="dateCreated datePublished" datetime="2021-04-01T21:23:15+08:00">2021-04-01</time>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <p>转自：<a target="_blank" rel="noopener" href="https://javadoop.com/post/AbstractQueuedSynchronizer-2">一行一行源码分析清楚 AbstractQueuedSynchronizer (二)</a></p>
+<p>ReentrantLock 默认采用非公平锁，如果你在构造函数中传入参数 true 则变成非公平锁</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="title">ReentrantLock</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    <span class="comment">// 默认非公平锁</span></span><br><span class="line">    sync = <span class="keyword">new</span> NonfairSync();</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="title">ReentrantLock</span><span class="params">(<span class="keyword">boolean</span> fair)</span> </span>&#123;</span><br><span class="line">    sync = fair ? <span class="keyword">new</span> FairSync() : <span class="keyword">new</span> NonfairSync();</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>公平锁的 lock 方法：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">static</span> <span class="keyword">final</span> <span class="class"><span class="keyword">class</span> <span class="title">FairSync</span> <span class="keyword">extends</span> <span class="title">Sync</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">final</span> <span class="keyword">void</span> <span class="title">lock</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        acquire(<span class="number">1</span>);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="comment">// AbstractQueuedSynchronizer.acquire(int arg)</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">final</span> <span class="keyword">void</span> <span class="title">acquire</span><span class="params">(<span class="keyword">int</span> arg)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">if</span> (!tryAcquire(arg) &amp;&amp;</span><br><span class="line">            acquireQueued(addWaiter(Node.EXCLUSIVE), arg))</span><br><span class="line">            selfInterrupt();</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="function"><span class="keyword">protected</span> <span class="keyword">final</span> <span class="keyword">boolean</span> <span class="title">tryAcquire</span><span class="params">(<span class="keyword">int</span> acquires)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">final</span> Thread current = Thread.currentThread();</span><br><span class="line">        <span class="keyword">int</span> c = getState();</span><br><span class="line">        <span class="keyword">if</span> (c == <span class="number">0</span>) &#123;</span><br><span class="line">            <span class="comment">// 1. 和非公平锁相比，这里多了一个判断：是否有线程在等待</span></span><br><span class="line">            <span class="keyword">if</span> (!hasQueuedPredecessors() &amp;&amp;</span><br><span class="line">                compareAndSetState(<span class="number">0</span>, acquires)) &#123;</span><br><span class="line">                setExclusiveOwnerThread(current);</span><br><span class="line">                <span class="keyword">return</span> <span class="keyword">true</span>;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">else</span> <span class="keyword">if</span> (current == getExclusiveOwnerThread()) &#123;</span><br><span class="line">            <span class="keyword">int</span> nextc = c + acquires;</span><br><span class="line">            <span class="keyword">if</span> (nextc &lt; <span class="number">0</span>)</span><br><span class="line">                <span class="keyword">throw</span> <span class="keyword">new</span> Error(<span class="string">&quot;Maximum lock count exceeded&quot;</span>);</span><br><span class="line">            setState(nextc);</span><br><span class="line">            <span class="keyword">return</span> <span class="keyword">true</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> <span class="keyword">false</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>非公平锁的 lock 方法：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">static</span> <span class="keyword">final</span> <span class="class"><span class="keyword">class</span> <span class="title">NonfairSync</span> <span class="keyword">extends</span> <span class="title">Sync</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">final</span> <span class="keyword">void</span> <span class="title">lock</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        <span class="comment">// 2. 和公平锁相比，这里会直接先进行一次CAS，成功就返回了</span></span><br><span class="line">        <span class="keyword">if</span> (compareAndSetState(<span class="number">0</span>, <span class="number">1</span>))</span><br><span class="line">            setExclusiveOwnerThread(Thread.currentThread());</span><br><span class="line">        <span class="keyword">else</span></span><br><span class="line">            acquire(<span class="number">1</span>);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="comment">// AbstractQueuedSynchronizer.acquire(int arg)</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">final</span> <span class="keyword">void</span> <span class="title">acquire</span><span class="params">(<span class="keyword">int</span> arg)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">if</span> (!tryAcquire(arg) &amp;&amp;</span><br><span class="line">            acquireQueued(addWaiter(Node.EXCLUSIVE), arg))</span><br><span class="line">            selfInterrupt();</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="function"><span class="keyword">protected</span> <span class="keyword">final</span> <span class="keyword">boolean</span> <span class="title">tryAcquire</span><span class="params">(<span class="keyword">int</span> acquires)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">return</span> nonfairTryAcquire(acquires);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * Performs non-fair tryLock.  tryAcquire is implemented in</span></span><br><span class="line"><span class="comment"> * subclasses, but both need nonfair try for trylock method.</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="function"><span class="keyword">final</span> <span class="keyword">boolean</span> <span class="title">nonfairTryAcquire</span><span class="params">(<span class="keyword">int</span> acquires)</span> </span>&#123;</span><br><span class="line">    <span class="keyword">final</span> Thread current = Thread.currentThread();</span><br><span class="line">    <span class="keyword">int</span> c = getState();</span><br><span class="line">    <span class="keyword">if</span> (c == <span class="number">0</span>) &#123;</span><br><span class="line">        <span class="comment">// 这里没有对阻塞队列进行判断</span></span><br><span class="line">        <span class="keyword">if</span> (compareAndSetState(<span class="number">0</span>, acquires)) &#123;</span><br><span class="line">            setExclusiveOwnerThread(current);</span><br><span class="line">            <span class="keyword">return</span> <span class="keyword">true</span>;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">else</span> <span class="keyword">if</span> (current == getExclusiveOwnerThread()) &#123;</span><br><span class="line">        <span class="keyword">int</span> nextc = c + acquires;</span><br><span class="line">        <span class="keyword">if</span> (nextc &lt; <span class="number">0</span>) <span class="comment">// overflow</span></span><br><span class="line">            <span class="keyword">throw</span> <span class="keyword">new</span> Error(<span class="string">&quot;Maximum lock count exceeded&quot;</span>);</span><br><span class="line">        setState(nextc);</span><br><span class="line">        <span class="keyword">return</span> <span class="keyword">true</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> <span class="keyword">false</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>总结：公平锁和非公平锁只有两处不同：</p>
+<ol>
+<li>非公平锁在调用 lock 后，首先就会调用 CAS 进行一次抢锁，如果这个时候恰巧锁没有被占用，那么直接就获取到锁返回了。</li>
+<li>非公平锁在 CAS 失败后，和公平锁一样都会进入到 tryAcquire 方法，在 tryAcquire 方法中，如果发现锁这个时候被释放了（state == 0），非公平锁会直接 CAS 抢锁，但是公平锁会判断等待队列是否有线程处于等待状态，如果有则不去抢锁，乖乖排到后面。</li>
+</ol>
+<p>公平锁和非公平锁就这两点区别，如果这两次 CAS 都不成功，那么后面非公平锁和公平锁是一样的，都要进入到阻塞队列等待唤醒。</p>
+<p>相对来说，非公平锁会有更好的性能，因为它的吞吐量比较大。当然，非公平锁让获取锁的时间变得更加不确定，可能会导致在阻塞队列中的线程长期处于饥饿状态。</p>
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2021/04/01/%E5%8F%AF%E9%81%93%E4%BA%91%E7%9B%98%E6%90%AD%E5%BB%BA/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="John Doe">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Hexo">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2021/04/01/%E5%8F%AF%E9%81%93%E4%BA%91%E7%9B%98%E6%90%AD%E5%BB%BA/" class="post-title-link" itemprop="url">可道云盘搭建</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">Posted on</span>
+      
+
+      <time title="Created: 2021-04-01 21:20:32 / Modified: 21:27:35" itemprop="dateCreated datePublished" datetime="2021-04-01T21:20:32+08:00">2021-04-01</time>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <h2 id="1-申请-ssl-证书"><a href="#1-申请-ssl-证书" class="headerlink" title="1. 申请 ssl 证书"></a>1. 申请 ssl 证书</h2><p>我是在华为云上申请的免费证书，步骤教学官网很详细：<a target="_blank" rel="noopener" href="https://support.huaweicloud.com/qs-ccm/ccm_07_0012.html">https://support.huaweicloud.com/qs-ccm/ccm_07_0012.html</a></p>
+<h2 id="2-配置宝塔面板"><a href="#2-配置宝塔面板" class="headerlink" title="2. 配置宝塔面板"></a>2. 配置宝塔面板</h2><ol>
+<li>点击 <strong>设置</strong><br><img src="https://img2020.cnblogs.com/blog/1814487/202103/1814487-20210313221413976-758510610.png"></li>
+<li>下载证书之后，解压，找到 *_Nginx 的哪个文件夹，拷贝进去，点击保存，强制HTTPS<br><img src="https://img2020.cnblogs.com/blog/1814487/202103/1814487-20210313221449893-875083860.png"></li>
+<li>之后我们就可以在配置文件中看到，<strong>nginx 服务器监听 443 端口，所以在 frpc.ini 中 local_port 应该配置为 443 而不是 80 （这里非常重要）</strong><br><img src="https://img2020.cnblogs.com/blog/1814487/202103/1814487-20210313221515856-254354505.png"></li>
+</ol>
+<h2 id="3-配置-frpc-ini"><a href="#3-配置-frpc-ini" class="headerlink" title="3. 配置 frpc.ini"></a>3. 配置 frpc.ini</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">[common]</span><br><span class="line">server_addr &#x3D; 公网 ip</span><br><span class="line">server_port &#x3D; 7000</span><br><span class="line">token &#x3D; 123456</span><br><span class="line"></span><br><span class="line">[kod]</span><br><span class="line">type &#x3D; tcp</span><br><span class="line">local_ip &#x3D; 127.0.0.1</span><br><span class="line">local_port &#x3D; 443</span><br><span class="line">remote_port &#x3D; 443 # 远程端口要为 443，注意打开防火墙</span><br></pre></td></tr></table></figure>
+
+<h2 id="4-配置-frps-ini，只要配置端口和-token-就行，注意-bind-port-要和-frpc-ini-中-server-port-一致"><a href="#4-配置-frps-ini，只要配置端口和-token-就行，注意-bind-port-要和-frpc-ini-中-server-port-一致" class="headerlink" title="4. 配置 frps.ini，只要配置端口和 token 就行，注意 bind_port 要和 frpc.ini 中 server_port 一致"></a>4. 配置 frps.ini，只要配置端口和 token 就行，注意 bind_port 要和 frpc.ini 中 server_port 一致</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">[common]</span><br><span class="line">bind_port &#x3D; 7000</span><br><span class="line">token &#x3D; 123456</span><br></pre></td></tr></table></figure>
+
+<h2 id="5-设置-frpc-frps-开机启动"><a href="#5-设置-frpc-frps-开机启动" class="headerlink" title="5. 设置 frpc +  frps 开机启动"></a>5. 设置 frpc +  frps 开机启动</h2><p>sudo vim /etc/systemd/system/frps0.20.service<br>填入如下信息，ExecStart请自行替换</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">[Unit]</span><br><span class="line">Description&#x3D;Frp Client</span><br><span class="line">After&#x3D;network.target</span><br><span class="line">Wants&#x3D;network.target</span><br><span class="line"></span><br><span class="line">[Service]</span><br><span class="line">Restart&#x3D;on-failure</span><br><span class="line">RestartSec&#x3D;5</span><br><span class="line">ExecStart&#x3D; &#x2F;usr&#x2F;local&#x2F;frp0.20&#x2F;frps -c &#x2F;usr&#x2F;local&#x2F;frp0.20&#x2F;frps.ini</span><br><span class="line"></span><br><span class="line">[Install]</span><br><span class="line">WantedBy&#x3D;multi-user.target</span><br></pre></td></tr></table></figure>
+
+<p>frpc 也是这样设置的</p>
+<p><strong>刷新服务列表：</strong><br>systemctl daemon-reload</p>
+<p><strong>设置开机自启</strong><br>systemctl enable frps0.20<br><strong>关闭开机自启</strong><br>systemctl disable frps0.20</p>
+<p><strong>启动服务</strong><br>systemctl start frps0.20<br><strong>停止服务</strong><br>systemctl stop frps0.20</p>
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2021/04/01/%E5%BC%BA%E3%80%81%E8%BD%AF%E3%80%81%E5%BC%B1%E3%80%81%E8%99%9A%E5%9B%9B%E7%A7%8D%E5%BC%95%E7%94%A8%E7%9A%84%E5%8C%BA%E5%88%AB/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="John Doe">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Hexo">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2021/04/01/%E5%BC%BA%E3%80%81%E8%BD%AF%E3%80%81%E5%BC%B1%E3%80%81%E8%99%9A%E5%9B%9B%E7%A7%8D%E5%BC%95%E7%94%A8%E7%9A%84%E5%8C%BA%E5%88%AB/" class="post-title-link" itemprop="url">强、软、弱、虚四种引用的区别</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">Posted on</span>
+      
+
+      <time title="Created: 2021-04-01 20:51:06 / Modified: 21:27:42" itemprop="dateCreated datePublished" datetime="2021-04-01T20:51:06+08:00">2021-04-01</time>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <h1 id="强、软、弱、虚四种引用的区别"><a href="#强、软、弱、虚四种引用的区别" class="headerlink" title="强、软、弱、虚四种引用的区别"></a>强、软、弱、虚四种引用的区别</h1><p>转自：<a target="_blank" rel="noopener" href="https://blog.csdn.net/junjunba2689/article/details/80601729">https://blog.csdn.net/junjunba2689/article/details/80601729</a></p>
+<h2 id="1-强引用"><a href="#1-强引用" class="headerlink" title="1. 强引用"></a>1. 强引用</h2><p><strong>以前我们使用的大部分引用实际上都是强引用，这是使用最普遍的引用</strong>。如果一个对象具有强引用，那就类似于必不可少的生活用品，垃圾回收器绝不会回收它。<strong>当内存空间不足，Java虚拟机宁愿抛出 OutOfMemoryError 错误，使程序异常终止，也不会靠随意回收具有强引用的对象来解决内存不足问题</strong>。</p>
+<h2 id="2-软引用（SoftReference）"><a href="#2-软引用（SoftReference）" class="headerlink" title="2. 软引用（SoftReference）"></a>2. 软引用（SoftReference）</h2><p>如果一个对象只具有软引用，那就类似于可有可物的生活用品。<strong>如果内存空间足够，垃圾回收器就不会回收它，如果内存空间不足了，就会回收这些对象的内存。</strong>只要垃圾回收器没有回收它，该对象就可以被程序使用。<strong>软引用可用来实现内存敏感的高速缓存。</strong></p>
+<h2 id="3．弱引用（WeakReference）"><a href="#3．弱引用（WeakReference）" class="headerlink" title="3．弱引用（WeakReference）"></a><strong>3．弱引用（WeakReference）</strong></h2><p>如果一个对象只具有弱引用，那就类似于可有可物的生活用品。<strong>弱引用与软引用的区别在于：只具有弱引用的对象拥有更短暂的生命周期。在垃圾回收器线程扫描它 所管辖的内存区域的过程中，一旦发现了只具有弱引用的对象，不管当前内存空间足够与否，都会回收它的内存。</strong>不过，由于垃圾回收器是一个优先级很低的线程， 因此不一定会很快发现那些只具有弱引用的对象。</p>
+<h2 id="4-虚引用（PhantomReference）"><a href="#4-虚引用（PhantomReference）" class="headerlink" title="4. 虚引用（PhantomReference）"></a>4. <strong>虚引用（PhantomReference）</strong></h2><p>“虚引用”顾名思义，就是形同虚设，与其他几种引用都不同，虚引用并不会决定对象的生命周期。如果一个对象仅持有虚引用，那么它就<strong>和没有任何引用一样，在任何时候都可能被垃圾回收。虚引用主要用来跟踪对象被垃圾回收的活动</strong>。虚引用与软引用和弱引用的一个区别在于：<strong>虚引用必须和引用队列（ReferenceQueue）联合使用</strong>。当垃圾回收器准备回收一个对象时，如果发现它还有虚引用，就会在回收对象的内存之前，把这个虚引用加入到与之关联的引用队列中。程序可以通过判断引用队列中是否已经加入了虚引用，来了解被引用的对象是否将要被垃圾回收。程序如果发现某个虚引用已经被加入到引用队列，那么就可以在所引用的对象的内存被回收之前采取必要的行动。</p>
+<p>特别注意，在实际程序设计中一般很少使用弱引用与虚引用，使用软用的情况较多，这是因为软引用可以加速JVM对垃圾内存的回收速度，可以维护系统的运行安全，防止内存溢出（OutOfMemory）等问题的产生。</p>
+<p><strong>总结：</strong></p>
+<p>强引用：<br>String str = “abc”;<br>list.add(str);<br>软引用：<br>如果弱引用对象回收完之后，内存还是报警，继续回收软引用对象<br>弱引用：<br>如果虚引用对象回收完之后，内存还是报警，继续回收弱引用对象<br>虚引用：<br>虚拟机的内存不够使用，开始报警，这时候垃圾回收机制开始执行System.gc(); String s = “abc”;如果没有对象回收了， 就回收没虚引用的对象</p>
+<p><img src="https://ae01.alicdn.com/kf/Uce57f1d49fd3425bb01b876324abd6ed2.jpg"></p>
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
+
+<script src="/js/comments.js"></script>
+</div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+
+
+<div class="copyright">
+  &copy; 
+  <span itemprop="copyrightYear">2021</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">John Doe</span>
+</div>
+  <div class="powered-by">Powered by <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/muse/" class="theme-link" rel="noopener" target="_blank">NexT.Muse</a>
+  </div>
+
+    </div>
+  </footer>
+
+  
+  <script src="https://cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js"></script>
+<script src="/js/utils.js"></script><script src="/js/motion.js"></script><script src="/js/schemes/muse.js"></script><script src="/js/next-boot.js"></script>
+
+  
+
+
+
+
+
+
+  
+
+
+
+
+
+</body>
+</html>
