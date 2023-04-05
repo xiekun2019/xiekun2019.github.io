@@ -6,6 +6,7 @@ title: 主页
 heroImage: /logo.svg
 heroText: xiekun's blog
 tagline: Talk is cheap. Show me the code.
+bgImage: http://file.mo7.cc/api/public/bz
 heroFullScreen: true
 projects:
   - icon: project

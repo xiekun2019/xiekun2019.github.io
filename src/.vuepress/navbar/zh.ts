@@ -1,52 +1,57 @@
 import { navbar } from "vuepress-theme-hope";
 
 export const zhNavbar = navbar([
-  "/zh/",
-  { text: "演示", icon: "discover", link: "/zh/demo/" },
-  {
-    text: "博文",
-    icon: "edit",
-    prefix: "/zh/posts/",
+  "/",
+  { 
+    text: "学习笔记", 
+    icon: "note",
     children: [
       {
-        text: "苹果",
-        icon: "edit",
-        prefix: "apple/",
-        children: [
-          { text: "苹果1", icon: "edit", link: "1" },
-          { text: "苹果2", icon: "edit", link: "2" },
-          "3",
-          "4",
-        ],
+        text: "学习笔记",
+        icon: "note",
+        link: "/note/",
+        activeMatch: "^/kernel/$",
       },
       {
-        text: "香蕉",
-        icon: "edit",
-        prefix: "banana/",
-        children: [
-          {
-            text: "香蕉 1",
-            icon: "edit",
-            link: "1",
-          },
-          {
-            text: "香蕉 2",
-            icon: "edit",
-            link: "2",
-          },
-          "3",
-          "4",
-        ],
+        text: "Linux 内核",
+        icon: "linux",
+        link: "/kernel/",
+        activeMatch: "^/kernel/$",
       },
-      { text: "樱桃", icon: "edit", link: "cherry" },
-      { text: "火龙果", icon: "edit", link: "dragonfruit" },
-      "tomato",
-      "strawberry",
+      {
+        text: "C/C++ 笔记",
+        icon: "code",
+        link: "/cpp/",
+        activeMatch: "^/cpp/$",
+      },
+      {
+        text: "嵌入式笔记",
+        icon: "bit",
+        link: "/embedded/",
+        activeMatch: "^/embedded/$",
+      }
+    ]
+  },
+  {
+    text: "随笔",
+    icon: "edit",
+    prefix: "/posts/",
+    children: [
+      { text: "随笔", link: "", icon: "note", activeMatch: "^/posts/$" },
     ],
   },
   {
-    text: "V2 文档",
-    icon: "note",
-    link: "https://theme-hope.vuejs.press/zh/",
+    text: "软件教程",
+    icon: "software",
+    prefix: "/software/",
+    children: [
+      {
+        text: "软件教程",
+        icon: "software",
+        link: "",
+        activeMatch: "^/software/$",
+      },
+      "git/",
+    ]
   },
 ]);
